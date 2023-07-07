@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: blueviolet;
+            color: white;
+        }
+        table{
+            width: 800px;
+            border-collapse: collapse;
+            position: relative;
+
+        }
+        caption{
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
+
+        }
+    
+        th,td{
+            border: 1px solid black;
+            padding: 10px;
+            border-collapse: collapse;
+        }
+        thead, tfoot{
+            background-color: rgb(44, 41, 41);
+            color: white;
+        }
+        thead > tr > th{
+            position: sticky;
+            top: 0;
+            background-color: rgb(44, 41, 41);
+        }
+        tbody > tr:nth-child(2n){
+            background-color: lightgray;
+
+        }
+        .numero{
+            text-align: right;
+
+        }
+        .A1{
+            overflow-x: auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>Isso e uma teste </h1>
+    <p>OI</p>
+    <div class="A1">
+        <table>
+            <caption>Populaçao das unidades Federativas</caption>
+            <thead>
+                <tr>
+                    <th scope="col">estado</th>
+                    <th scope="col" style="width: 50px;">Populaçao</th>
+        
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>sao paulo</td>
+                    <td class="numero">46.024.937</td>
+                </tr>
+                <tr>
+                    <td>Minas gerais</td>
+                    <td class="numero">20.732.660</td>
+                </tr>
+                <tr>
+                    <td>Rio de janeiro</td>
+                    <td class="numero">16.615.526</td>
+                </tr>
+                <tr>
+                    <td>Bahia</td>
+                    <td class="numero">14.659.023</td>
+                </tr>
+                <tr>
+                    <td>Paraná</td>
+                    <td class="numero">11 835 379</td>
+                </tr>
+                <tr>
+                    <td>Rio grnade do sul</td>
+                    <td class="numero">11 088 065</td>
+                </tr>
+                <tr>
+                    <td>Permambuco</td>
+                    <td class="numero">19 051 113</td>
+                </tr>
+                <tr>
+                    <td>ceará</td>
+                    <td class="numero">8 936 431</td>
+                </tr>
+                <tr>
+                    <td>Pará</td>
+                    <td class="numero">8 442 962</td>
+                </tr>
+                <tr>
+                    <td>Santa catarina</td>
+                    <td class="numero">7 762 154</td>
+                </tr>
+                <tr>
+                    <td>Goias</td>
+                    <td class="numero">6 950 976</td>
+                </tr>
+                <tr>
+                    <td>Maranhao</td>
+                    <td class="numero">6 800 605</td>
+                </tr>
+                
+            </tbody>
+            <tfoot>
+                <th scope="row">total de habitantes</th>
+                <td class="numero"><strong>207.883.699</strong></td>
+            </tfoot>
+        </table>
+    </div>
+</body>
+</html>
