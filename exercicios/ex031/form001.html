@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: lightgray;
+        }
+    </style>
+</head>
+<body>
+    <h1>Meu primeiro formulario</h1>
+    <form action="" autocomplete="off" method="post">
+        <p><label for="nome">Nome:</label>
+            <input type="text" name="nome1" id="nome" placeholder="Nome"></p> 
+        
+
+        <p><label for="sobrenome">Sobrenome:</label>
+            <input type="text" name="sobrenome1" id="sobrenome" placeholder="sobrenome"></p>
+
+        <input type="submit" value="enviar" onclick="enviar()">
+    </form>
+
+    <script>
+        let nome = document.getElementById('nome')
+        let sobrenome = document.getElementById('sobrenome')
+
+
+        function enviar() {
+            if(nome.value == 0 || sobrenome.value == 0){
+                alert('Por favor preencha os dados para prossegir')
+                
+            }else{
+                innerHTML = 'dados recebidos'
+            }
+        }
+
+
+    </script>
+    
+</body>
+</html>
