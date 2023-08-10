@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+</head>
+<body>
+    <h1>Teste de formularios</h1>
+    <form action="" method="get" autocomplete="on">
+        <fieldset>
+            <legend>Dados pessoais</legend>
+            <div>
+                <label for="inome">Nome:</label>
+                <input type="text" name="inome" id="inome">
+            </div>
+            <br>
+            <div>
+                <label for="email">Digite seu email</label>
+                <input type="email" name="email" id="email" autocomplete="email">
+            </div>
+            <br>
+            <div>
+                <label for="tel">Telefone</label>
+                <input type="tel" name="tel" id="tel" autocomplete="tel" required>
+            </div>
+        </fieldset>
+        <br>
+        <div>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </div>
+    </form>
+    
+</body>
+</html>
