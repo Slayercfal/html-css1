@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+    <h1>Teste de formulario</h1>
+    <form>
+        <div>
+            <label for="num1">Numero 1</label>
+            <input type="number" name="num1" id="num1" required">
+        </div>
+        <div>
+            <label for="num2">Numero 2</label>
+            <input type="number" name="num2" id="num2" required">
+        </div>
+        <div>
+            <label for="isoma">Soma:</label>
+            <output name="soma" id="isoma">0</output>
+        </div>
+
+        <div>
+            <input type="button" value="Enviar" onclick="clicar()">
+            <input type="reset" value="Apagar">
+        </div>
+    </form>
+
+    <script>
+        let numero1 = document.getElementById('num1')
+        let numero2 = document.getElementById('num2')
+        let soma = document.getElementById('isoma')
+
+        function clicar() {
+
+            let soma1 = Number(numero1.value) * Number(numero2.value)
+            isoma.innerHTML = `${soma1}`
+        }
+
+        
+
+    </script>
+    
+</body>
+</html>
