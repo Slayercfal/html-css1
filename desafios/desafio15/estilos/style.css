@@ -21,6 +21,8 @@ main{
 
 .container-primary{
     width: 400px;
+    transition: width .3s , height .3s;
+    transition-timing-function: ease;
 }
 
 .imagem-foto{
